@@ -7,6 +7,7 @@ void printSolution(int *path,int n)
     {
         cout<<path[i]<<" ";
     }
+    cout<<path[0];
 }
 bool isSafe(int **graph,int n,int v,int *path,int pos)
 {
@@ -83,6 +84,7 @@ int main()
     {
         graph[i]=new int[n];
     }
+    cout<<"\n\nEnter the elements of array:\n";
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n;j++)
